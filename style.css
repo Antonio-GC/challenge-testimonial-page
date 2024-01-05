@@ -34,7 +34,7 @@ body{
 
 .wrapper-box{
     display: grid;
-    row-gap:20px;
+    row-gap:50px;
 }
 
 .start{
