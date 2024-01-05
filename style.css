@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+:root{
+    --start-color: #f5c044;
+    --green-check-list: #4CA154;
+    --black-title:#18181B;
+    --gray-text:#52525A;
+    --withe-bold:#FAFAF9;
+    --gray-light: #D4D4D8;
+
+    --font-size-title: 2rem;
+    --font-size-body-2:1.25rem;
+    --font-size-list: 1rem;
+
+}
+
+html{
+    font-family: 'Sora', sans-serif;
+}
+
+body{
+    background-color: var(--withe-bold);
+}
+.container {
+    width: 100%; /* Ancho del 100% para empezar */
+    max-width: 1200px; /* Ancho máximo que puede alcanzar el contenedor */
+    margin: 15rem auto; /* Centra el contenedor */
+    padding: 0 15px; /* Espaciado interno para evitar que el contenido toque los bordes del contenedor */
+}
+
+.wrapper-box{
+    display: grid;
+    row-gap:20px;
+}
+
+.start{
+    border-radius: 50%;
+    background-color: var(--start-color);
+    width: 25px;
+    height: 25px;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+
+.container-text{
+    padding: 0  2rem 0 0;
+    margin-bottom: 2rem;
+}
+
+.title-text{
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: var(--black-title);
+    margin: .7rem 0;
+}
+
+.info-text{
+    color: var(--gray-text);
+    font-size: var(--font-size-body-2);
+    font-weight: normal;
+    line-height: 1.8rem;
+}
+
+.wrapper-list{
+    display: grid;
+    row-gap: 10px;
+}
+
+.check-list{
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    font-size: var(--font-size-list);
+    color: var(--gray-text);
+
+
+}
+
+.container-card{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+
+}
+
+.card{
+    max-width: 20rem;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: -11px 10px 6px -1px rgba(0,0,0,0.07);
+    padding: 2rem;
+
+}
+.img-card{
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ilustration-img{
+    width: 100px;
+    margin-right: 20px;
+}
+
+.meta{
+    align-self: end;
+}
+
+.tile-card{
+    font-size: var(--font-size-body-2);
+    color: var(--black-title);
+    margin: .5rem 0;
+}
+
+.text-card{
+    color: var(--gray-text);
+    font-size: var(--font-size-list);
+    font-weight: normal;
+    line-height: 1.8rem;
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 800px;
+    }
+
+
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 2000px;
+    }
+    .wrapper-box{
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1850px;
+    }
+
+    .wrapper-box{
+        column-gap: 40px;
+    }
+
+    .meta{
+        align-self: start;
+    }
+
+    .google{
+        align-self: end;
+    }
+}
+
+@media (min-width: 1800px) {
+    .container {
+        max-width: 1250px;
+    }
+}
